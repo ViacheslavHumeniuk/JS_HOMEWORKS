@@ -1,0 +1,31 @@
+{
+  "name": "npm-lesson-example",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ViacheslavHumeniuk/npm.git)"
+  },
+  "keywords": [
+    "npm",
+    "lesson",
+    "example"
+  ],
+  "author": "Viacheslav Humeniuk",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "3.2.4"
+  }
+}
