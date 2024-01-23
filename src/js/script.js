@@ -1,19 +1,13 @@
 'use strict'
 
-const getNumber = [];
-
-function getRandomNumber (min, max)
-{
-    let randomNumber;
-    do {
-        randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    } while
-        (getNumber.includes (randomNumber));
-    getNumber.push(randomNumber);
-    return randomNumber;
+const usedNumbers = []
+const randomNumber = function () {
+  const randomNumberResult = Math.floor(Math.random() * 100)
+  if (usedNumbers.includes(randomNumberResult)) return randomNumber()
+  usedNumbers.push(randomNumberResult)
+  return randomNumberResult
 }
 
-for (let i = 0; i <100; i++) {
-    let newNumber = getRandomNumber (1,100);
-    console.log (newNumber);
+for (let i = 0; i <= 99; i += 1) {
+  console.log(randomNumber())
 }
